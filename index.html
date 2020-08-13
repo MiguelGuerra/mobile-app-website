@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en"> <!--linguagem do html-->
+	<head>
+		<meta charset="UTF-8">
+		<title>myApp</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link href="css/hover.css" rel="stylesheet" type="text/css"> 		<!-- biblioteca hover css-->
+		<link href="css/animate.css" rel="stylesheet" type="text/css">      	<!-- biblioteca animate css. Insere-se no elemnto a classe animated e a frente a animaçao pretendida-->
+		<link href="css/slick.css" rel="stylesheet" type="text/css">
+		<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+		<header>
+				<nav class="container wow animated fadeInDown" data-wow-delay="1s" data-wow-duration="1s">
+					<a href="#" class="float-left hamburguer hidden-md-up">   <!-- o hidden diz que a partir do md esta classe esconde-se-->
+						<i class="material-icons">menu</i>                    <!--esta barra de menu so apareçe em mobile, o float left alinha a esquerda-->
+					</a> 
+					<div class="nav_links">
+						<a href="#" class="goTo-Faqs">FAQs</a>                  <!--a classe hvr- é da classes da biblioteca hover.css-->
+						<a href="#" class="goTo-gallery">Gallery</a>
+						<a href="#">Login</a>
+					</div>
+				</nav>
+		</header>
+
+		<!--start hero-->
+		<section id="hero">
+			<div class="lettering text-center text-md-left">
+				<div class="container">  
+					<h1 class="wow animated fadeIn" data-wow-duration="2s">
+						Beautiful Websites. 
+						<br> 
+						Increased Conversions. 
+					</h1>
+					<a href="#" class="butao mr-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".8s">Try it Free</a> <a href="#" class="butao_transparent ml-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".8s"><i class="material-icons">play_circle_filled</i> Watch the Video</a>
+				</div>
+			</div>
+		</section>
+	   <!--end hero-->
+	   <!--SECTION 01-->
+	   <section id="section1" class="text-center text-md-left">  <!--o texto é center ate ao tamanho md, depois do tamaho md é alinhado a esquerda-->
+			<div class="container">
+				<div class="row"> <!--ocupa um row-->
+					<div class="col-md-6">
+						<img src="images/section1.png" alt="" class="img-fluid wow animated fadeInLeft"  data-wow-offset="300"> <!--o "img-fluid" faz com que a imagem fique responsiva. o animated fadeinleft faz a imagem arrastar para a esquerda. O offset sao os pixeis que o scrol tem de passar o inicio da imagem para o animate surgir!-->
+					</div> <!--ocupa seis colunas da pagina-->
+					<div class="col-md-6">
+						  
+						<img src="images/section-1-icon.png" alt="" class="hvr-float">
+						<p class="text-uppercase size10">Plug into the</p>  <!--o "text uppercase" é uma classe bootsrap que faz as letras uppercase -->
+						<h2>NextGen Framework</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis alias accusamus, quis perspiciatis esse eos dicta, quibusdam laboriosam rem quas ipsa fuga nesciunt nemo nihil ipsam in quia et.</p>
+						<a href="#">Learn more &gt;</a>   		<!--faz um ">" em frente ao texto-->
+					</div>  
+				</div>
+			</div>
+	   </section>
+
+	   <hr class="container">  <!--a classe container faz com que a linha se ajuste ao container-->
+		
+		<!--section2-->
+	   <section id="section2" class="text-center text-md-left">
+			<div class="container">
+				<div class="row"> <!--ocupa um row-->
+					<div class="col-md-6">
+						<img src="images/section-2-icon.png" alt="" class="hvr-float">
+						<p class="text-uppercase size10">Retina display-534ppm</p>  <!--o "text uppercase" é uma classe bootsrap que faz as letras uppercase -->
+						<h2>Stunning Graphics</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis alias accusamus, quis perspiciatis esse eos dicta, quibusdam laboriosam rem quas ipsa fuga nesciunt nemo nihil ipsam in quia et.</p>
+						<a href="#">Learn more &gt;</a>   		<!--faz um ">" em frente ao texto-->
+					</div>  
+					<div class="col-md-6">
+						<img src="images/section2.png" alt="" class="img-fluid wow animated fadeInRight"  data-wow-offset="300"> <!--o "img-fluid" faz com que a imagem fique responsiva-->
+					</div> <!--ocupa seis colunas da pagina-->
+				</div>
+			</div>
+	   </section>
+
+	   <hr class="container">
+	   <!--SECTION 03-->
+	   <section id="section3" class="text-center text-md-left">
+			<div class="container-fluid">  <!--padding a zero do colunm-->
+				<div class="row"> 
+					<div class="col-md-6  p-0">
+						<img src="images/section3.png" alt="" class="img-fluid wow animated fadeInLeft"  data-wow-offset="300"> <!--o "img-fluid" faz com que a imagem fique responsiva-->
+					</div> 
+					<div class="col-md-6">
+						<img src="images/section-3-icon.png" alt="" class="hvr-float">
+						<p class="text-uppercase size10">Privacy protected</p>  <!--o "text uppercase" é uma classe bootstrap que faz as letras uppercase -->
+						<h2>Secured Solutions</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis alias accusamus, quis perspiciatis esse eos dicta, quibusdam laboriosam rem quas ipsa fuga nesciunt nemo nihil ipsam in quia et.</p>
+						<a href="#">Learn more &gt;</a>   		<!--faz um ">" em frente ao texto-->
+					</div>  
+				</div>
+			</div>
+		</section>
+		<!--SECTION 04-->
+		<section id="section4">
+			<div class="container">  
+				<div class="row">
+					<div class="col-md-4">
+						<div class="shadow"> <!--para usar a propriedade box-shadow sem que as borders choquem um com a outra-->
+							<h3>Starter</h3>
+							<h4>FREE</h4>
+							<h5>Limited Acess</h5>
+							<p><strong>Full</strong> Acess</p>
+							<p>Source Files</p>
+							<p><strong>100</strong> user account</p>
+							<p><strong>1 year</strong> license</p>
+							<p>Phone &amp; Email Support</p>
+							<div class="spacer20"></div>
+							<div class="spacer20"></div>
+							<a href="#" class="butao-blue">Get Started</a>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="shadow">
+							<h3>Professional</h3>
+							<h4><sup>$</sup>12</h4>  <!--  o sup mete em cima a letra-->
+							<h5 >Limited Acess</h5>
+							<p>Full Acess</p>
+							<p>Source Files</p>
+							<p>100 user account</p>
+							<p>1 year license</p>
+							<p>
+								<i class="material-icons">star</i>     <!--usa o icon star do google material icons-->
+								<i class="material-icons">star</i> 
+								<i class="material-icons">star</i> 
+								<i class="material-icons">star</i> 
+								<i class="material-icons">star</i>
+							</p>
+							<div class="spacer20"></div>
+							<div class="spacer20"></div>
+							<a href="#" class="butao-blue">Get Started</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="shadow">
+							<h3>Starter</h3>
+							<h4><sup>$</sup>19</h4>
+							<h5>Limited Acess</h5>
+							<p>Full Acess</p>
+							<p>Source Files</p>
+							<p>100 user account</p>
+							<p>1 year license</p>
+							<p>Phone &amp; Email Support</p>
+							<div class="spacer20"></div>
+							<div class="spacer20"></div>
+							<a href="#" class="butao-blue">Get Started</a>
+						</div>	
+					</div>
+				</div>	
+			</div>
+	   </section>
+	   <!--SECTION 05-->
+	   <section id="section5" class="text-center text-md-left">
+		   <div class="container">
+				<h2>Frequently Asked Questions</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h3>How do i become an author?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum cumque, odio, minima soluta mollitia consectetur inventore dolorum aperiam. Quae deleniti odit laborum cumque eos rerum, accusamus voluptatem repellendus quod!</p>
+						<h3>How much money can i make?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum cumque, odio, minima soluta mollitia consectetur inventore dolorum aperiam. Quae deleniti odit laborum cumque eos rerum, accusamus voluptatem repellendus quod!</p>
+						<h3>An introduction to the Marketplacefor Authors</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum cumque, odio, minima soluta mollitia consectetur inventore dolorum aperiam. Quae deleniti odit laborum cumque eos rerum, accusamus voluptatem repellendus quod!</p>
+					</div>
+					<div class="col-md-6">
+						<h3>Helpful Resources for Authors</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum cumque, odio, minima soluta mollitia consectetur inventore dolorum aperiam. Quae deleniti odit laborum cumque eos rerum, accusamus voluptatem repellendus quod!</p>
+						<h3>Can I Offer my items for free on a promotional basis?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum cumque, odio, minima soluta mollitia consectetur inventore dolorum aperiam. Quae deleniti odit laborum cumque eos rerum, accusamus voluptatem repellendus quod!</p>
+						<h3>How does the Tuts+ Premium affiliate program work?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum cumque, odio, minima soluta mollitia consectetur inventore dolorum aperiam. Quae deleniti odit laborum cumque eos rerum, accusamus voluptatem repellendus quod!</p>
+					</div>
+				</div>
+			</div>
+	   </section>
+		 <!--SECTION 06-->
+	   <section id="section6">
+	   
+	   	<div class="slider">
+	   		<div>
+	   			<div class="container">
+				<img src="287d2bc1b374b76a6fe9db36e15f2d26.jpg" alt="" class="rounded-circle">
+				<h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odit perspiciatis, nostrum excepturi neque veritatis itaque expedita illo sapiente! Odit ratione, vero"</h3>
+				<div>     
+					<strong class="text-uppercase">-Jon Doe</strong><br>
+					<span class="grey">XYZ inc.</span>
+				</div>
+				</div>
+	   		</div>
+	   		<div>
+	   			<div class="container">
+				<img src="287d2bc1b374b76a6fe9db36e15f2d26.jpg" alt="" class="rounded-circle">
+				<h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odit perspiciatis, nostrum excepturi neque veritatis itaque expedita illo sapiente! Odit ratione, vero"</h3>
+				<div>     
+					<strong class="text-uppercase">-Jon Doe</strong><br>
+					<span class="grey">XYZ inc.</span>
+				</div>
+				</div>
+	   		</div>
+	   		<div>
+	   			<div class="container">
+				<img src="287d2bc1b374b76a6fe9db36e15f2d26.jpg" alt="" class="rounded-circle">
+				<h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odit perspiciatis, nostrum excepturi neque veritatis itaque expedita illo sapiente! Odit ratione, vero"</h3>
+				<div>     
+					<strong class="text-uppercase">-Jon Doe</strong><br>
+					<span class="grey">XYZ inc.</span>
+				</div>
+				</div>
+	   		</div>
+	   	</div>
+	   	
+	   	
+	   	
+			
+	   </section>
+	   <!--SECTION 07-->
+	   <section id="section7">
+			<div class="container">
+				<h2>App Screenshots</h2>
+				<div class="col-md-6 offset-md-3">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+				</div>
+				<a href="#" class="butao-blue">Check All</a>
+				<div class="container">
+				<div class="spacer20"></div>
+				<div class="spacer20"></div>
+				<div class="spacer20"></div>
+				<div class="spacer20"></div>
+					<div class="row">    
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-1.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-1.jpg" alt="" class="img-fluid"> </a>      <!--o img-fluid torna as imaens responsivas-->
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-2.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-2.jpg" alt="" class="img-fluid"> </a>	<!--classe open big esta associada ao plugin da fancybox-->
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-3.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-3.jpg" alt="" class="img-fluid"> </a>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-4.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-4.jpg" alt="" class="img-fluid"> </a>
+						</div>
+
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-5.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-5.jpg" alt="" class="img-fluid"> </a>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-1.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-1.jpg" alt="" class="img-fluid"> </a>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-4.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-4.jpg" alt="" class="img-fluid"> </a>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="images/Z-5.jpg" class="openBig" rel="group" title="Amazing Design"><img src="images/Z-5.jpg" alt="" class="img-fluid"> </a>
+						</div>
+					</div>	
+				</div>
+			</div>
+	   </section>
+		 <!--SECTION 08-->
+	   <section id="section8" class="text-center text-md-left">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="material-icons">web</i>
+					<h4>Web Friendly</h4>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eaque quam, reiciendis! Vel blanditiis, quae autem doloremque eveniet.</h5>
+				</div>
+				<div class="col-md-4">
+					<i class="material-icons">settings_input_composite</i>
+					<h4>Flexible options</h4>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eaque quam, reiciendis! Vel blanditiis, quae autem doloremque eveniet.</h5>
+				</div>
+				<div class="col-md-4">
+					<i class="material-icons">schedule</i>
+					<h4>Responsive Ready</h4>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eaque quam, reiciendis! Vel blanditiis, quae autem doloremque eveniet.</h5>
+				</div>
+				<div class="col-md-4">
+					<i class="material-icons">desktop_windows</i>
+					<h4>Cross Browser</h4>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eaque quam, reiciendis! Vel blanditiis, quae autem doloremque eveniet.</h5>
+				</div>
+				<div class="col-md-4">
+					<i class="material-icons">insert_chart</i>
+					<h4>Schedule Backups</h4>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eaque quam, reiciendis! Vel blanditiis, quae autem doloremque eveniet.</h5>
+				</div>
+				<div class="col-md-4">
+					<i class="material-icons">cloud_queue</i>
+					<h4>Cloud Sharing</h4>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eaque quam, reiciendis! Vel blanditiis, quae autem doloremque eveniet.</h5>
+				</div>
+			</div>
+		</div>
+	   </section>
+	   <!--SECTION 09-->
+	   <section id="section9">
+			<div class="container">
+				<h2>Experienced &amp; Trusted by <span class="blue">16,000+</span> People Worldwide</h2>    <!--criamos um span para puder dar a classe blue ao numero-->
+				<div class="spacer20"></div>
+				<a href="" class="butao-black mr-1">Login Now</a>
+				<a href="" class="butao-blue ml-1">Try it Free</a>
+			</div>
+	   </section>
+	   <!--SECTION 10-->
+	   <section id="section10">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>
+							<i class="material-icons">language</i><strong>Free Training</strong> &amp; 24-hour coverage
+						</h3>
+					</div>
+					<div class="col-md-4">
+						<h3>
+							<i class="material-icons">language</i><strong>Free Training</strong> &amp; 24-hour coverage
+						</h3>
+					</div>
+					<div class="col-md-4">
+						<h3>
+							<i class="material-icons">language</i><strong>Free Training</strong> &amp; 24-hour coverage
+						</h3>
+					</div>
+				</div>
+			</div>
+	   </section>
+	   <!--FOOTER-->
+	   <footer class="text-center text-md-left">
+	   		<div class="container">
+	   			<div class="row">
+	   				<div class="col-md-5 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum odit placeat, consequuntur quam? Voluptatem eius mollitia, aspernatur perspiciatis ipsam. Quasi animi pariatur repellat, corrupti veniam ipsum mollitia ab, quibusdam.
+	   				<div class="spacer20"></div>
+	   				<a href="" target="_blank"><img src="images/1487378549_google_circle_color.png" alt=""></a>     <!--o target abre num novo separador-->
+	   				<a href="" target="_blank"><img src="images/1487378513_twitter_circle_color.png" alt=""></a>
+	   				<a href="" target="_blank"><img src="images/1487378505_instagram_circle_color.png" alt=""></a>
+	   				<a href="" target="_blank"><img src="images/1487378499_youtube_circle_color.png" alt=""></a>
+	   				<a href="" target="_blank"><img src="images/1487378475_linkedin_circle_color.png" alt=""></a>
+					</div>	
+	   				<div class="col-md-7">
+	   					<div class="row">            <!--cria um novo row que ja pode ser dividido por 3 parte iguais, o row cria novamente as 12 colunas!-->
+	   						<div class="col-md-4">     
+	   							<h3>IN NEWS</h3>
+	   							<ul>
+	   								<li><a href="#">Documentation</a></li>
+	   								<li><a href="#">Feedback</a></li>
+	   								<li><a href="#">Plugins</a></li>
+	   								<li><a href="#">Support Forums</a></li>
+	   								<li><a href="#">Themes</a></li>
+	   							</ul>
+	  						</div>
+	  						<div class="col-md-4">
+								<h3>ABOUT US</h3>
+									<ul>
+										<li><a href="#">Documentation</a></li>
+										<li><a href="#">Feedback</a></li>
+										<li><a href="#">Plugins</a></li>
+										<li><a href="#">Support Forums</a></li>
+										<li><a href="#">Themes</a></li>
+									</ul>
+	   						</div>
+	   						<div class="col-md-4">
+									<h3>IN NEWS</h3>
+									<ul>
+										<li><a href="#">Documentation</a></li>
+										<li><a href="#">Feedback</a></li>
+										<li><a href="#">Plugins</a></li>
+										<li><a href="#">Support Forums</a></li>
+										<li><a href="#">Themes</a></li>
+									</ul>
+	   						</div>
+	   				</div>
+	   				</div>
+	   				
+	   			</div>
+	   			<div id="copyright">
+					Copyright &copy; 2017 All rights reserved Flag Inc.
+					<div>
+						<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+					</div>
+	   			</div>
+	   		</div>
+	   </footer>
+	   
+	   
+	   <script type="text/javascript" src="js/jquery-3.1.1.min.js">   </script> 
+	   <script src="js/wow.min.js"></script>
+	   <script src="js/parallax.min.js"></script>                  <!--chama a biblioteca do parallax scrolling-->
+ 	   <script type="text/javascript" src="js/slick.min.js"></script>
+ 	   <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>     <!--plugin da fancybox-->
+ 	   
+ 	   
+  	   
+  	   <script>
+		   //ativaçao de todos os plugins
+		   
+	   new WOW().init();
+	   $("#hero").parallax({imageSrc: 'images/hero.jpg'});        //seleciona o elemento do id hero, e faz um parallax da imagem, ou seja enquanto faz scroll a imagem esta fixa
+	   
+		   
+	   $(window).scroll(function(){
+		   if ($(window).scrollTop() > 50){
+			   $("header").addClass("sticky");
+		   }else{
+			   $("header").removeClass("sticky");
+		   }
+	   });
+		   
+		     
+       $(document).ready(function(){
+       		$('.slider').slick({         //chama a funçao/plugin "slick" que torna aque div com a classe slider num slideshow
+				autoplay:true,			//no slick mete o autoplay TRUE	
+							
+				dots: true 				//mete os pontos no slider
+				
+		    });         
+      	
+		   $(".openBig").fancybox();       //ativa o fancybox
+       
+		   	
+		   $(".hamburguer").on("click", function(e){         //show hide mobile menu bar. ao fazer "click" no elemnto acontece a seguinte funçao
+			   e.preventDefault();     
+			   $(".nav_links").fadeToggle();                //o div da classe ".nav_links" aparece com um slide down effect
+			                        						//disable hyperlink no ".hamburguer"
+		   });           
+	
+		   
+		   $(".goTo-gallery").on("click", function(e){         //sempre que eu clicar na classe ".go to gallery" acontece a seguinte funçao
+			   e.preventDefault();
+			   
+			   $('html, body').animate({
+				   scrollTop: $("#section7").offset().top        //faz um scroll auto ate a secção 7
+    			   }, 2000);
+		   });  
+		   
+		   
+		   $(".goTo-Faqs").on("click", function(e){         //sempre que eu clicar na classe ".go to Faqs" acontece a seguinte funçao
+			   e.preventDefault();
+			   
+			   $('html, body').animate({
+				   scrollTop: $("#section5").offset().top
+    			   }, 2000);
+		   }); 
+		   
+		   });
+	   
+	  
+  
+   
+	   </script>												
+  	   <!--o seletor é a janela do browser, quando a window faz scroll, acontce a function-->
+  	   
+  	   
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

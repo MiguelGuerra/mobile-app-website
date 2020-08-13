@@ -1,0 +1,579 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+#hero{
+	/*background-color: #666;
+	background-image: url(../hero.jpg);*/     /*esta em comentario porque usamos o parallax para fixar a imagem enquanto ha scroll!*/
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 70px;   /*margem abaixo do hero, para nao ficar agarrado a section de baixo*/
+	
+}
+
+.lettering{
+	position: absolute;
+	left: 0px;   /*começa na esquerda*/
+	top: 50%;    /*para ficar com o div a meio da pagina*/
+	transform: translateY(-50%); /*truque para meter o texto alinhado em altura(na vertical). Posiciona o elemento a subir 50% em Y.*/
+	width: 100%;
+	
+}
+
+.lettering h1 {
+	color: white;
+	font-size: 35px;
+	margin-bottom: 70px; /*margem para o botato "try it free". No botao nao pode ter margem porque nao é um elemento em bloco*/
+	
+}
+
+header{
+	position: absolute;
+	width: 100%; /*sempre a 100% no absolute*/
+	top: 0;
+	left: 0;
+	z-index: 1;  /*posiciona o elemento na layer 1*/
+	transition: background .5s ease-in-out;       /*a transiçao para o sticky é mais gradual*/
+}
+
+/*--------------------------------------------------------quando o header fica fixo a window---------------------------------------------------------------------------------------*/
+
+header.sticky {
+	position: fixed;
+	background: white;
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	
+}
+
+header.sticky a{
+	color: black;
+	
+}
+
+
+header.sticky nav{
+	transition: background .5s ease-in-out;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	
+}
+
+
+header.sticky a:hover{
+	color: #686767;
+	
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+nav{
+	padding: 35px 20px;
+	border-bottom: 1px solid rgba(255,255,255,.3); /*red, green, blue, opacity*/
+	text-align: right;
+}
+
+nav a{                        
+	color: white;
+	padding: 10px 20px;  /*os itens do nav ficam espaçados*/
+	font-size: 14px;
+	
+}
+/*apenas os <a> dentro do nav*/  
+
+nav a:hover {
+	color: white;
+	background-color: rgba(255,255,255,.15);
+	text-decoration: none;      /* tira o sublinhado default do texto*/ 
+	border-radius: 30px; /* fica com as bordas redondas*/ 
+}
+/*o :hover altera o seletor sempre que o rato passa por cima dele*/ 
+
+nav a:focus {
+	color: white;
+	background-color: rgba(255,255,255,.15);
+	text-decoration: none;      /* tira o sublinhado default do texto*/ 
+	border-radius: 30px; /* fica com as bordas redondas*/ 
+}
+/*o :focus altera o seletor sempre que clicamos no seletor*/ 
+
+.butao_transparent{
+	color: white;
+	font-size: 14px;
+	
+}
+
+.butao_transparent i{
+	font-size: 16px;
+	margin-right: 6px;
+}
+
+.butao_transparent:hover{
+	color: black;
+	font-size: 14px;
+	
+}
+
+
+.butao{
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 14px;
+	
+}
+/*botao "Try it free"*/
+/*o :focus altera o seletor sempre que clicamos no seletor*/ 
+
+.butao:hover{
+	background-color: #E8E8E8;
+	color: black;
+	text-decoration: none;
+}
+
+.butao:focus{
+	background-color: #E8E8E8;
+	color: black;
+	text-decoration: none;
+}
+/*depois de premido fica igual ao :hover*/
+
+
+
+#section1 h2{
+	margin-bottom: 50px;
+	
+}
+
+#section1 p{
+	color: #999;
+	line-height: 24px;   /*espaço entre as linhas*/
+	
+}
+
+.size10{
+	font-size: 10px; /*classe para que as letras fiquem grandes de tamanho 10*/
+}
+
+
+ /*SECTION2*/
+#section2 h2{
+	margin-bottom: 50px;
+	
+}
+
+#section2 p{
+	color: #999;
+	line-height: 24px;   /*espaço entre as linhas*/
+	
+}
+
+#section2{
+	overflow: hidden;    /*fecha a section2 sem abrir o scroll para a direita apos dar-mos o animate que traz a imagem da direita para a esquerda*/
+}
+
+hr {
+	margin-bottom: 30px;
+}
+
+ /*SECTION3*/
+#section3{
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	margin-bottom: 150px;       /*para nao ficar colado a section de baixo*/
+}
+
+#section3 h2{
+	margin-bottom: 50px;
+	
+}
+
+#section3 p{
+	color: #999;
+	line-height: 24px;   /*espaço entre as linhas*/
+	
+}
+
+/*SECTION4*/
+
+#section4 .col-md-4 {   /*todos os col-md-4 dentro do sectio 4*/
+	text-align: center;
+
+}
+
+.shadow {
+	box-shadow: 0 0 5px rgba(0,0,0,.3);       /*x y blur cor*/
+	padding: 50px 15px;
+}
+
+#section4 h3{
+	font-size: 14px;
+	margin-bottom: 45px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+#section4{
+	margin-bottom: 150px;
+}
+
+#section4 h4{
+	font-size: 45px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+#section4 h5{
+	color: #aaa;
+	margin-bottom: 45px;
+	font-size: 12px;
+	
+}
+
+#section4 p{
+	font-size: 12px;
+	color: #aaa;
+	
+}
+
+#section4 strong{
+	color: black;
+}
+
+#section4 h4 sup{
+	font-size: 26px;
+	
+}
+
+#section4 i.material-icons{
+	color: black;
+	font-size: 12px;
+}
+
+
+.butao-blue{
+	padding: 10px 20px;
+	background-color: #267df4;
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 14px;
+	
+}
+/*botao "Try it free"*/
+/*o :focus altera o seletor sempre que clicamos no seletor*/ 
+
+.butao-blue:hover{
+	background-color: #E8E8E8;
+	color: #267df4;
+	text-decoration: none;
+}
+
+.butao-blue:focus{
+	background-color: #E8E8E8;
+	color: black;
+	text-decoration: none;
+}
+/*depois de premido fica igual ao :hover*/
+
+.spacer20{         /*cria um div vazio com 2o px de altura*/
+	height: 20px;
+}
+
+#section5 h2{
+	text-align: center;
+	margin-bottom: 60px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#section5 h3{
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#section5 p{
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	margin-bottom: 60px;
+}
+
+#section6{
+	background-color: #f8fafb;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+#section6 img{
+	max-width: 70px;     /*mesmo que a imagem tem mais largura ela nao passa deste valor */
+}
+
+
+#section6 h3{
+	font-size: 16px;
+	color: #aaa;
+	margin-top: 40px;
+	width: 80%;
+	margin: 40px auto;       /*centra no centro e tem margem em cima e em baixo*/
+}
+
+.grey{
+	color:#aaa;
+}
+
+#section7{
+	text-align: center;
+	padding-top: 50px;
+}
+
+#section7 h2{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-size: 22px;
+	
+}
+#section7 h3{
+	font-size: 18px;
+	padding-bottom: 50px;
+	color: #aaa;
+	
+}
+
+
+
+#section7 .col-md-3{            /*para as imagens nao ficarem pegadas com a parte de baixo das outras 4 imagens*/
+	margin-bottom: 80px;
+}
+
+#section7 img{
+	box-shadow: 0px 5px 20px rgba(0,0,0,.15);      /* da um efeito drop shadow as imagens (x y blur cor)*/
+}
+
+#section8{
+	background-color: #f8fafb;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 50px 0px;
+}
+
+
+#section8 h4{
+	font-size: 14px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#section8 h5{
+	font-size: 12px;
+	color: #aaa;
+	line-height: 16px;
+}
+
+#section8 i{
+	color: #aaa;
+	font-size: 40px;
+
+}
+
+#section8 .col-md-4{
+	margin-bottom: 40px;
+}
+
+.butao-black{
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 14px;
+	
+}
+
+.butao-black:hover{
+	background-color: #C6BFBF;
+	color: #267df4;
+	text-decoration: none;
+}
+
+.butao-black:focus{
+	background-color: black;
+	color: black;
+	text-decoration: none;
+}
+
+#section9{
+	padding: 100px 0px;
+	text-align: center;
+}
+
+
+#section9 h2{
+	padding-bottom: 30px;
+}
+
+.blue{
+	color: #267df4;
+}
+
+/*section 10*/
+#section10{
+	background-color: #f8fafb;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 20px 0px;
+	text-align: center;
+	
+}
+
+#section10 h3{
+	font-size: 10px;
+	color: #aaa;
+	
+}
+
+#section10 i{
+	vertical-align: middle;   /*alinha o icon verticalmente relativamente a linha - alinha com o texto*/
+	margin-right: 5px;
+}
+
+.black{
+	color: black;
+}
+
+footer{
+	padding: 75px 0 20px;	
+	color: #aaa;
+	font-size: 12px;
+}
+
+footer h3{
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 30px;
+}
+
+footer ul{
+	padding-left: 0px;
+	
+}
+
+footer li{
+	list-style-type: none;
+	margin-bottom: 5px 
+	
+}
+
+footer a{
+	color: #aaa;
+}
+
+footer a:hover{
+	color: black;
+}
+
+
+
+#copyright{
+	padding-top: 50px;
+}
+
+
+#copyright a{
+	color: #aaa;
+}
+
+
+#copyright a:hover{
+	color: black;
+}
+
+i.material-icons {             /*todos os icons i ficam verticalmente alinhados*/
+	vertical-align: sub;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*MEDIA QUERIES*/
+
+/*media querie para mobile ate ao maximo de tamanho 768px*/
+/*tudo o que esta dentro do media querie MATA o qu foi posto em CSS anteriormente*/
+
+@media (max-width:767px){
+	
+	.hamburguer{
+		padding: 0px;
+	}
+	
+	.hamburguer:hover{
+		background: transparent;
+	}
+	
+	.lettering h1{
+		font-size: 25px;
+	}
+	
+	nav{
+		text-align: center;
+		padding-bottom: 55px;
+	}
+	
+	nav a{
+		display: block !important;	  /*ficam em bloco*/
+		
+	}
+		
+	
+	
+	.nav_links{
+		display: none;   /*apaga classe*/
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
